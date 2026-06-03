@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're Booked — K&N Mulching</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #1B6B3A;
+  --green-dark: #145A2E;
+  --brown: #3B2314;
+  --gold: #C4883A;
+  --cream: #FBF8F3;
+  --white: #FFFFFF;
+  --text: #2C2C2C;
+  --text-light: #6B6B6B;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 56px 40px;
+  max-width: 540px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  height: 72px;
+  margin: 0 auto 32px;
+}
+
+.check {
+  width: 64px;
+  height: 64px;
+  background: var(--green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  animation: pop 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.check svg {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: var(--brown);
+  margin-bottom: 12px;
+}
+
+h1 span { color: var(--green); }
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 28px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps {
+  text-align: left;
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 32px;
+}
+
+.steps p {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--green);
+  margin-bottom: 12px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.steps ol {
+  padding-left: 20px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.steps li {
+  margin-bottom: 6px;
+}
+
+.steps li:last-child { margin-bottom: 0; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  background: var(--green);
+  color: var(--white);
+}
+
+.btn:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(27,107,58,0.3);
+}
+
+.phone {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.phone a {
+  color: var(--green);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .card { padding: 40px 24px; }
+  h1 { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="images/logo.png" alt="K&N Mulching" class="logo">
+  <div class="check">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+  <h1><span>You're Booked</span></h1>
+  <p class="subtitle">Your free estimate request is confirmed. We'll reach out to you same day.</p>
+  <div class="steps">
+    <p>What happens next</p>
+    <ol>
+      <li>We'll call or text you to confirm details</li>
+      <li>We'll swing by to scope the job</li>
+      <li>You get a clear quote — no obligation</li>
+    </ol>
+  </div>
+  <a href="/" class="btn">Back to Home</a>
+  <p class="phone">Questions? Text or call <a href="tel:4074628444">407-462-8444</a></p>
+</div>
+
+</body>
+</html>
